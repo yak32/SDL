@@ -28,6 +28,8 @@
 #include "SDL_mutex.h"
 #include "SDL_timer.h"
 
+int64_t OSAtomicCompareAndSwap32Barrier(int64_t, int64_t, volatile int64_t*);
+
 #if !defined(HAVE_GCC_ATOMICS) && defined(__SOLARIS__)
 #include <atomic.h>
 #endif
