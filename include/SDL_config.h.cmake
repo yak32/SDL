@@ -533,7 +533,7 @@
 #cmakedefine SDL_VIDEO_VITA_PVR_OGL @SDL_VIDEO_VITA_PVR_OGL@
 
 #if !defined(__WIN32__) && !defined(__WINRT__)
-#  if !defined(_STDINT_H_) && !defined(_STDINT_H) && !defined(HAVE_STDINT_H) && !defined(_HAVE_STDINT_H)
+#  if !defined(_STDINT_H_) && !defined(_STDINT_H) && !defined(HAVE_STDINT_H) && !defined(_HAVE_STDINT_H) && !defined(HAVE_LIBC)
 typedef unsigned int size_t;
 typedef signed char int8_t;
 typedef unsigned char uint8_t;
